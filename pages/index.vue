@@ -1,5 +1,5 @@
 <template>
-  <div class="w-10/12 md:w-8/12 lg:w-5/12 m-auto">
+  <div class="w-layout">
     <component
       :is="story.content.component"
       v-if="story.content.component"
@@ -29,6 +29,16 @@ export default {
   data() {
     return {
       story: { content: {} }
+    }
+  },
+  async fetch(context) {
+    if(context.store.state.posts.loaded !== '1') {
+      const postsRefRes = await context.app.$storyapi.get('cdn/stories/', {
+        starts_with: 'blog/',
+        version: 'draft'
+      })
+      context.store.commit('posts/setPosts', postsRefRes.data.stories)
+      context.store.commit('posts/setLoaded', '1')
     }
   },
   mounted() {

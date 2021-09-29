@@ -1,9 +1,14 @@
 <template>
-  <div class="w-10/12 md:w-8/12 lg:w-5/12 m-auto">
+  <div class="w-layout">
     <h1 class="headline-title mb-2">Blog</h1>
-    <ul>
-      <li v-for="post in stories" :key="post._uid">
-        <nuxt-link :to="post.full_slug">{{ post.name }}</nuxt-link>
+    <ul class="flex flex-wrap mb-4 items-stretch">
+      <li
+        v-for="post in stories"
+        :key="post._uid"
+        class="w-full md:w-2/4 lg:w-1/3 mb-2">
+        <BlogCard
+          :post-link="post.full_slug"
+          :post-content="post.content" />
       </li>
     </ul>
   </div>

@@ -1,12 +1,14 @@
 <template>
   <div
     v-editable="blok"
-    class="prose mx-auto">
+    class="w-layout">
     <h1 class="headline-title">{{ blok.title }}</h1>
     <p>{{ blok.intro }}</p>
-    <rich-text-renderer
-      :document="blok.long_text"
-    />
+    <div class="prose mx-auto">
+      <rich-text-renderer
+        :document="blok.long_text"
+      />
+    </div>
   </div>
 </template>
 

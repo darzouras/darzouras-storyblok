@@ -32,6 +32,12 @@
     .font-width-100 {
       font-variation-settings: "wdth" 150;
     }
+
+    .w-layout {
+      @apply w-10/12;
+      max-width: 800px;
+      @apply mx-auto;
+    }
   }
 }
 /* stylelint-enable */
