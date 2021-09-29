@@ -6,7 +6,6 @@
 
 <script>
 import Post from '~/components/Post.vue'
-const { StoryblokBridge } = window
 
 export default {
   components: {
@@ -37,6 +36,7 @@ export default {
   },
   mounted () {
     this.$storybridge(() => {
+      // eslint-disable-next-line
       const storyblokInstance = new StoryblokBridge()
 
       // Use the input event for instant update of content

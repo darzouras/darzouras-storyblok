@@ -9,8 +9,6 @@
 </template>
 
 <script>
-const { StoryblokBridge } = window
-
 export default {
   asyncData (context) {
     // loads the JSON from the API - loading the home content (index page)
@@ -35,6 +33,7 @@ export default {
   },
   mounted() {
     this.$storybridge(() => {
+      // eslint-disable-next-line
       const storyblokInstance = new StoryblokBridge()
 
       storyblokInstance.on('input', (event) => {
