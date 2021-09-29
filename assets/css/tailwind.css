@@ -20,7 +20,7 @@
     }
     .headline-kicker {
       font-variation-settings: "wdth" 75, "wght" 700;
-      text-transform: uppercase;
+      @apply uppercase;
     }
 
     .font-width-0 {

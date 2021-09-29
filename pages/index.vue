@@ -1,5 +1,5 @@
 <template>
-  <div class="w-10/12 m-auto">
+  <div class="w-10/12 md:w-8/12 lg:w-5/12 m-auto">
     <component
       :is="story.content.component"
       v-if="story.content.component"

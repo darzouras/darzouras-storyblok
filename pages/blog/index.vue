@@ -1,6 +1,6 @@
 <template>
-  <div class="w-10/12 m-auto">
-    <h1 class="text-5xl mb-2">Blog</h1>
+  <div class="w-10/12 md:w-8/12 lg:w-5/12 m-auto">
+    <h1 class="headline-title mb-2">Blog</h1>
     <ul>
       <li v-for="post in stories" :key="post._uid">
         <nuxt-link :to="post.full_slug">{{ post.name }}</nuxt-link>

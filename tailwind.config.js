@@ -1,11 +1,19 @@
 module.exports = {
-  purge: [
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-  ],
+  purge: {
+    content: [
+      './components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}'
+    ],
+    safelist: [
+      'headline-website',
+      'headline-title',
+      'headline-subtitle',
+      'headline-kicker'
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
