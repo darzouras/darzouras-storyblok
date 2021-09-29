@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white min-h-screen h-full pb-40">
     <Header />
     <Nuxt />
   </div>

@@ -2,4 +2,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @variants responsive {
+    .headline-website {
+      font-variation-settings: "wdth" 150, "wght" 700;
+      @apply text-6xl;
+      @apply mb-2;
+    }
+    .headline-title {
+      @apply text-5xl;
+      font-variation-settings: "wdth" 135, "wght" 600;
+    }
+    .headline-subtitle {
+      @apply text-3xl;
+      font-variation-settings: "wdth" 105, "wght" 500;
+    }
+    .headline-kicker {
+      font-variation-settings: "wdth" 75, "wght" 700;
+      text-transform: uppercase;
+    }
+
+    .font-width-0 {
+      font-variation-settings: "wdth" 62.5;
+    }
+    .font-width-50 {
+      font-variation-settings: "wdth" 106.25;
+    }
+    .font-width-100 {
+      font-variation-settings: "wdth" 150;
+    }
+  }
+}
 /* stylelint-enable */

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans w-10/12 m-auto">
+  <div class="w-10/12 m-auto">
     <Post :blok="story.content" />
   </div>
 </template>

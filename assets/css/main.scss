@@ -1,1 +1,6 @@
-@import 'utils/reset.scss'
+@import 'utils/reset.scss';
+@import 'utils/fonts.scss';
+
+body {
+  font-family: 'Georama', Arial, Helvetica, sans-serif;
+}

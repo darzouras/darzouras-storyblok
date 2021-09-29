@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans w-10/12 m-auto">
+  <div class="w-10/12 m-auto">
     <h1 class="text-5xl mb-2">Blog</h1>
     <ul>
       <li v-for="post in stories" :key="post._uid">

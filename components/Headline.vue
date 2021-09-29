@@ -16,19 +16,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.headline-title {
-  font-size: 3rem;
-}
-
-.headline-subtitle {
-  font-size: 2rem;
-}
-
-.headline-kicker {
-  font-size: 1.15rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-</style>
