@@ -1,8 +1,8 @@
 <template>
   <div
     v-editable="blok"
-    class="prose my-24 mx-auto">
-    <h1>{{ blok.title }}</h1>
+    class="prose mx-auto">
+    <h1 class="headline-title">{{ blok.title }}</h1>
     <p>{{ blok.intro }}</p>
     <rich-text-renderer
       :document="blok.long_text"
