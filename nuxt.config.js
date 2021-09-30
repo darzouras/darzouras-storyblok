@@ -3,7 +3,7 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'server',
+  target: 'static',
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
@@ -36,7 +36,8 @@ export default {
   plugins: [
     '~/plugins/components',
     '~/plugins/composition-api',
-    '~/plugins/storyblok-rich-text-renderer'
+    '~/plugins/storyblok-rich-text-renderer',
+    '~/plugins/preview.client'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
